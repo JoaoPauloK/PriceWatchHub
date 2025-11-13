@@ -37,10 +37,10 @@ export default function ForgotPassword() {
       <Card className="w-full max-w-md p-8 space-y-6 border-card-border">
         <div className="text-center space-y-2">
           <Link href="/">
-            <a className="inline-flex items-center gap-2 mb-4" data-testid="link-home">
+            <div className="inline-flex items-center gap-2 mb-4 cursor-pointer" data-testid="link-home">
               <TrendingDown className="h-8 w-8 text-primary" />
               <span className="font-display font-bold text-2xl">PriceWatch</span>
-            </a>
+            </div>
           </Link>
           <h1 className="font-display font-bold text-3xl">
             {language === "en" ? "Reset Password" : "Redefinir Senha"}
@@ -96,10 +96,10 @@ export default function ForgotPassword() {
         )}
 
         <Link href="/login">
-          <a className="flex items-center justify-center gap-2 text-sm text-primary hover:underline" data-testid="link-back">
+          <div className="flex items-center justify-center gap-2 text-sm text-primary hover:underline cursor-pointer" data-testid="link-back">
             <ArrowLeft className="h-4 w-4" />
             {language === "en" ? "Back to login" : "Voltar ao login"}
-          </a>
+          </div>
         </Link>
       </Card>
     </div>

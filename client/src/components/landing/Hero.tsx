@@ -34,14 +34,14 @@ export function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <Button size="lg" asChild className="group" data-testid="button-hero-cta">
-              <Link href="/register">
-                <a className="flex items-center gap-2">
+            <Link href="/register">
+              <Button size="lg" className="group" data-testid="button-hero-cta">
+                <span className="flex items-center gap-2">
                   {t("hero.cta1")}
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </a>
-              </Link>
-            </Button>
+                </span>
+              </Button>
+            </Link>
             <Button size="lg" variant="outline" asChild data-testid="button-hero-demo">
               <a href="#how-it-works" className="flex items-center gap-2">
                 <Play className="h-4 w-4" />

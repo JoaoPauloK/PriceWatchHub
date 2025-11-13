@@ -118,11 +118,11 @@ export default function Dashboard() {
         <div className="max-w-screen-2xl mx-auto px-6 h-16 flex items-center justify-between gap-6">
           <div className="flex items-center gap-6">
             <Link href="/">
-              <a className="flex items-center gap-2 hover-elevate rounded-md px-3 py-2" data-testid="link-home">
+              <div className="flex items-center gap-2 hover-elevate rounded-md px-3 py-2 cursor-pointer" data-testid="link-home">
                 <ArrowLeft className="h-5 w-5" />
                 <TrendingDown className="h-6 w-6 text-primary" />
                 <span className="font-display font-bold text-xl hidden sm:inline">PriceWatch</span>
-              </a>
+              </div>
             </Link>
             <h1 className="font-display font-semibold text-xl hidden md:block">
               {t("dashboard.title")}

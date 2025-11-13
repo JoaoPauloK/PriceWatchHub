@@ -45,10 +45,10 @@ export default function Login() {
       <Card className="w-full max-w-md p-8 space-y-6 border-card-border">
         <div className="text-center space-y-2">
           <Link href="/">
-            <a className="inline-flex items-center gap-2 mb-4" data-testid="link-home">
+            <div className="inline-flex items-center gap-2 mb-4 cursor-pointer" data-testid="link-home">
               <TrendingDown className="h-8 w-8 text-primary" />
               <span className="font-display font-bold text-2xl">PriceWatch</span>
-            </a>
+            </div>
           </Link>
           <h1 className="font-display font-bold text-3xl">
             {language === "en" ? "Welcome Back" : "Bem-vindo de Volta"}
@@ -101,17 +101,17 @@ export default function Login() {
 
         <div className="text-center space-y-2 text-sm">
           <Link href="/forgot-password">
-            <a className="text-primary hover:underline" data-testid="link-forgot-password">
+            <span className="text-primary hover:underline cursor-pointer" data-testid="link-forgot-password">
               {language === "en" ? "Forgot password?" : "Esqueceu a senha?"}
-            </a>
+            </span>
           </Link>
           
           <p className="text-muted-foreground">
             {language === "en" ? "Don't have an account?" : "Não tem uma conta?"}{" "}
             <Link href="/register">
-              <a className="text-primary hover:underline font-semibold" data-testid="link-register">
+              <span className="text-primary hover:underline font-semibold cursor-pointer" data-testid="link-register">
                 {language === "en" ? "Sign up" : "Cadastre-se"}
-              </a>
+              </span>
             </Link>
           </p>
         </div>

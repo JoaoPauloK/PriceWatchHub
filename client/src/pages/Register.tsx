@@ -65,10 +65,10 @@ export default function Register() {
       <Card className="w-full max-w-md p-8 space-y-6 border-card-border">
         <div className="text-center space-y-2">
           <Link href="/">
-            <a className="inline-flex items-center gap-2 mb-4" data-testid="link-home">
+            <div className="inline-flex items-center gap-2 mb-4 cursor-pointer" data-testid="link-home">
               <TrendingDown className="h-8 w-8 text-primary" />
               <span className="font-display font-bold text-2xl">PriceWatch</span>
-            </a>
+            </div>
           </Link>
           <h1 className="font-display font-bold text-3xl">
             {language === "en" ? "Create Account" : "Criar Conta"}
@@ -137,9 +137,9 @@ export default function Register() {
         <p className="text-center text-sm text-muted-foreground">
           {language === "en" ? "Already have an account?" : "Já tem uma conta?"}{" "}
           <Link href="/login">
-            <a className="text-primary hover:underline font-semibold" data-testid="link-login">
+            <span className="text-primary hover:underline font-semibold cursor-pointer" data-testid="link-login">
               {language === "en" ? "Sign in" : "Entrar"}
-            </a>
+            </span>
           </Link>
         </p>
       </Card>

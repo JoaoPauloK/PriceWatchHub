@@ -12,10 +12,10 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/40 bg-background/80 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between gap-6">
         <Link href="/">
-          <a className="flex items-center gap-2 hover-elevate rounded-md px-3 py-2" data-testid="link-home">
+          <div className="flex items-center gap-2 hover-elevate rounded-md px-3 py-2 cursor-pointer" data-testid="link-home">
             <TrendingDown className="h-6 w-6 text-primary" />
             <span className="font-display font-bold text-xl">PriceWatch</span>
-          </a>
+          </div>
         </Link>
 
         <div className="hidden md:flex items-center gap-1">
@@ -30,11 +30,9 @@ export function Navbar() {
         <div className="flex items-center gap-3">
           <LanguageToggle />
           <ThemeToggle />
-          <Button asChild data-testid="button-get-started">
-            <Link href="/login">
-              <a>{t("nav.getStarted")}</a>
-            </Link>
-          </Button>
+          <Link href="/login">
+            <Button data-testid="button-get-started">{t("nav.getStarted")}</Button>
+          </Link>
         </div>
       </div>
     </nav>

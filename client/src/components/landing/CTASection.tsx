@@ -25,13 +25,11 @@ export function CTASection() {
           {t("cta.subtitle")}
         </p>
 
-        <Button size="lg" asChild className="group" data-testid="button-cta-main">
-          <Link href="/register">
-            <a className="text-lg px-8 py-6">
-              {t("cta.button")}
-            </a>
-          </Link>
-        </Button>
+        <Link href="/register">
+          <Button size="lg" className="group text-lg px-8 py-6" data-testid="button-cta-main">
+            {t("cta.button")}
+          </Button>
+        </Link>
       </div>
     </section>
   );
