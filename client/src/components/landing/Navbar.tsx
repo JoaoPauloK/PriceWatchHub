@@ -31,7 +31,7 @@ export function Navbar() {
           <LanguageToggle />
           <ThemeToggle />
           <Button asChild data-testid="button-get-started">
-            <Link href="/dashboard">
+            <Link href="/login">
               <a>{t("nav.getStarted")}</a>
             </Link>
           </Button>

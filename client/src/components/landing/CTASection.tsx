@@ -26,7 +26,7 @@ export function CTASection() {
         </p>
 
         <Button size="lg" asChild className="group" data-testid="button-cta-main">
-          <Link href="/dashboard">
+          <Link href="/register">
             <a className="text-lg px-8 py-6">
               {t("cta.button")}
             </a>
